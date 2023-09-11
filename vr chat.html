@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อความที่กระพริบและขนาดใหญ่</title>
+    <style>
+        /* สร้างการกระพริบโดยใช้ @keyframes */
+        @keyframes blink {
+            0% { opacity: 0; color: red; }
+            25% { opacity: 1; color: blue; }
+            50% { opacity: 0; color: green; }
+            75% { opacity: 1; color: orange; }
+            100% { opacity: 0; color: purple; }
+        }
+
+        /* ใช้การแสดงผลแบบ inline-block เพื่อเริ่มขึ้นบรรทัดใหม่ */
+        .blinking-text {
+            display: inline-block;
+            font-size: 180px; /* กำหนดขนาดฟอนต์ใหญ่ */
+            animation: blink 2s infinite; /* เรียกใช้การกระพริบ */
+        }
+    </style>
+</head>
+<body>
+    <div class="blinking-text">
+        <p>โซดาหัวล้าน</p>
+    </div>
+</body>
+</html>
